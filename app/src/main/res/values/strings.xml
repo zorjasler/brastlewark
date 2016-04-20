@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Brastlewark</string>
+
+    <string name="population_data_url">
+        https://raw.githubusercontent.com/AXA-GROUP-SOLUTIONS/mobilefactory-test/master/data.json
+    </string>
+
+    <string name="title_name">Name: </string>
+    <string name="title_age">Age: </string>
+    <string name="title_weight">Weight: </string>
+    <string name="title_height">Height: </string>
+    <string name="title_hair_color">Hair color: </string>
+    <string name="title_professions">Professions: </string>
+    <string name="title_friends">Friends: </string>
+
+    <string name="error_fetching_data">An error has occurred</string>
+    <string name="error_null_object">The passed object is null</string>
+</resources>
