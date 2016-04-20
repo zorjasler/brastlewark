@@ -104,10 +104,10 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     public void setProfessions(List<String> professions) {
-        detailProfessions.setText(professions.toString());
+        detailProfessions.setText(professions.toString().substring(1, professions.toString().length()-1));
     }
 
     public void setFriends(List<Object> friends) {
-        detailFriends.setText(friends.toString());
+        detailFriends.setText(friends.toString().substring(1, friends.toString().length()-1));
     }
 }
