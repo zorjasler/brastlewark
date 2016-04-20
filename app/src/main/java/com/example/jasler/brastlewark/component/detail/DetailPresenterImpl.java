@@ -9,7 +9,6 @@ import com.example.jasler.brastlewark.models.Brastlewarker;
 public class DetailPresenterImpl implements DetailPresenter {
 
     private DetailView mView;
-
     public DetailPresenterImpl(DetailView view) {
         mView = view;
     }
@@ -17,15 +16,19 @@ public class DetailPresenterImpl implements DetailPresenter {
     @Override
     public void onCreate(Brastlewarker brastlewarker) {
         mView.showProgress();
-        if (brastlewarker != null)
-            mView.setData(brastlewarker);
-        else
-            mView.showErrorMessage(R.string.error_null_object);
+        setData(brastlewarker);
         mView.hideProgress();
     }
 
     @Override
     public void onDestroy() {
         mView = null;
+    }
+
+    private void setData(Brastlewarker brastlewarker) {
+        if (brastlewarker != null)
+            mView.setData(brastlewarker);
+        else
+            mView.showErrorMessage(R.string.error_null_object);
     }
 }
