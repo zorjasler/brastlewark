@@ -68,45 +68,41 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     @Override
-    public void setData(Brastlewarker brastlewarker) {
-        setThumbnail(brastlewarker.getThumbnail());
-        setName(brastlewarker.getName());
-        setAge(brastlewarker.getAge());
-        setWeight(brastlewarker.getWeight());
-        setHeight(brastlewarker.getHeight());
-        setHairColor(brastlewarker.getHairColor());
-        setProfessions(brastlewarker.getProfessions());
-        setFriends(brastlewarker.getFriends());
-    }
-
     public void setThumbnail(String thumbnail) {
         Picasso.with(this).load(thumbnail).into(characterThumbnailBig);
     }
 
+    @Override
     public void setName(String name) {
         detailName.setText(name);
     }
 
+    @Override
     public void setAge(Integer age) {
         detailAge.setText(String.valueOf(age));
     }
 
+    @Override
     public void setWeight(Double weight) {
         detailWeight.setText(String.valueOf(weight));
     }
 
+    @Override
     public void setHeight(Double height) {
         detailHeight.setText(String.valueOf(height));
     }
 
+    @Override
     public void setHairColor(String hairColor) {
         detailHairColor.setText(hairColor);
     }
 
+    @Override
     public void setProfessions(List<String> professions) {
         detailProfessions.setText(professions.toString().substring(1, professions.toString().length()-1));
     }
 
+    @Override
     public void setFriends(List<Object> friends) {
         detailFriends.setText(friends.toString().substring(1, friends.toString().length()-1));
     }
