@@ -12,7 +12,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class Population {
 
-    private List<Brastlewarker> Brastlewarker = new ArrayList<Brastlewarker>();
+    private List<Brastlewarker> Brastlewarker;
 
     /**
      * No args constructor for use in serialization

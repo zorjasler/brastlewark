@@ -21,8 +21,8 @@ public class Brastlewarker implements Parcelable {
     private double weight;
     private double height;
     private String hair_color;
-    private List<String> professions = new ArrayList<String>();
-    private List<Object> friends = new ArrayList<Object>();
+    private List<String> professions;
+    private List<Object> friends;
 
     /**
      * No args constructor for use in serialization
