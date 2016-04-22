@@ -19,8 +19,8 @@ public class MainPresenterImpl implements MainPresenter {
     private ResultCallback mResultCallback = new ResultCallback() {
         @Override
         public void onSuccess(Population population) {
-            mView.hideProgress();
             mView.setData(population);
+            mView.hideProgress();
         }
 
         @Override
