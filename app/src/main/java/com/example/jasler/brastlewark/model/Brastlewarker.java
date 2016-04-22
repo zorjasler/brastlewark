@@ -14,32 +14,14 @@ import com.google.gson.annotations.SerializedName;
  */
 public class Brastlewarker implements Parcelable {
 
-    @SerializedName("id")
-    @Expose
     private Integer id;
-    @SerializedName("name")
-    @Expose
     private String name;
-    @SerializedName("thumbnail")
-    @Expose
     private String thumbnail;
-    @SerializedName("age")
-    @Expose
     private Integer age;
-    @SerializedName("weight")
-    @Expose
     private Double weight;
-    @SerializedName("height")
-    @Expose
     private Double height;
-    @SerializedName("hair_color")
-    @Expose
-    private String hairColor;
-    @SerializedName("professions")
-    @Expose
+    private String hair_color;
     private List<String> professions = new ArrayList<String>();
-    @SerializedName("friends")
-    @Expose
     private List<Object> friends = new ArrayList<Object>();
 
     /**
@@ -56,18 +38,18 @@ public class Brastlewarker implements Parcelable {
      * @param thumbnail
      * @param age
      * @param name
-     * @param hairColor
+     * @param hair_color
      * @param professions
      */
     public Brastlewarker(Integer id, String name, String thumbnail, Integer age, Double weight,
-                         Double height, String hairColor, List<String> professions, List<Object> friends) {
+                         Double height, String hair_color, List<String> professions, List<Object> friends) {
         this.id = id;
         this.name = name;
         this.thumbnail = thumbnail;
         this.age = age;
         this.weight = weight;
         this.height = height;
-        this.hairColor = hairColor;
+        this.hair_color = hair_color;
         this.professions = professions;
         this.friends = friends;
     }
@@ -79,7 +61,7 @@ public class Brastlewarker implements Parcelable {
         age = in.readInt();
         weight = in.readDouble();
         height = in.readDouble();
-        hairColor = in.readString();
+        hair_color = in.readString();
         professions = in.createStringArrayList();
         in.readList(friends, null);
     }
@@ -109,7 +91,7 @@ public class Brastlewarker implements Parcelable {
         dest.writeInt(age);
         dest.writeDouble(weight);
         dest.writeDouble(height);
-        dest.writeString(hairColor);
+        dest.writeString(hair_color);
         dest.writeStringList(professions);
         dest.writeList(friends);
     }
@@ -202,14 +184,14 @@ public class Brastlewarker implements Parcelable {
      * @return The hairColor
      */
     public String getHairColor() {
-        return hairColor;
+        return hair_color;
     }
 
     /**
-     * @param hairColor The hair_color
+     * @param hair_color The hair_color
      */
-    public void setHairColor(String hairColor) {
-        this.hairColor = hairColor;
+    public void setHairColor(String hair_color) {
+        this.hair_color = hair_color;
     }
 
     /**

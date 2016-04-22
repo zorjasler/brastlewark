@@ -12,9 +12,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class Population {
 
-    @SerializedName("Brastlewark")
-    @Expose
-    private List<Brastlewarker> Brastlewarkers = new ArrayList<Brastlewarker>();
+    private List<Brastlewarker> Brastlewarker = new ArrayList<Brastlewarker>();
 
     /**
      * No args constructor for use in serialization
@@ -28,7 +26,7 @@ public class Population {
      * @param Brastlewarker
      */
     public Population(List<Brastlewarker> Brastlewarker) {
-        this.Brastlewarkers = Brastlewarker;
+        this.Brastlewarker = Brastlewarker;
     }
 
     /**
@@ -37,7 +35,7 @@ public class Population {
      * The Brastlewarkers
      */
     public List<Brastlewarker> getBrastlewarkers() {
-        return Brastlewarkers;
+        return Brastlewarker;
     }
 
     /**
@@ -46,7 +44,7 @@ public class Population {
      * The Brastlewarkers
      */
     public void setBrastlewarkers(List<Brastlewarker> Brastlewarkers) {
-        this.Brastlewarkers = Brastlewarkers;
+        this.Brastlewarker = Brastlewarkers;
     }
 
 }
