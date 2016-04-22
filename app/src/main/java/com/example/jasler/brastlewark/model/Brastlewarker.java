@@ -104,24 +104,10 @@ public class Brastlewarker implements Parcelable {
     }
 
     /**
-     * @param id The id
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    /**
      * @return The name
      */
     public String getName() {
         return name;
-    }
-
-    /**
-     * @param name The name
-     */
-    public void setName(String name) {
-        this.name = name;
     }
 
     /**
@@ -132,24 +118,10 @@ public class Brastlewarker implements Parcelable {
     }
 
     /**
-     * @param thumbnail The thumbnail
-     */
-    public void setThumbnail(String thumbnail) {
-        this.thumbnail = thumbnail;
-    }
-
-    /**
      * @return The age
      */
     public Integer getAge() {
         return age;
-    }
-
-    /**
-     * @param age The age
-     */
-    public void setAge(Integer age) {
-        this.age = age;
     }
 
     /**
@@ -160,24 +132,10 @@ public class Brastlewarker implements Parcelable {
     }
 
     /**
-     * @param weight The weight
-     */
-    public void setWeight(Double weight) {
-        this.weight = weight;
-    }
-
-    /**
      * @return The height
      */
     public Double getHeight() {
         return height;
-    }
-
-    /**
-     * @param height The height
-     */
-    public void setHeight(Double height) {
-        this.height = height;
     }
 
     /**
@@ -188,13 +146,6 @@ public class Brastlewarker implements Parcelable {
     }
 
     /**
-     * @param hair_color The hair_color
-     */
-    public void setHairColor(String hair_color) {
-        this.hair_color = hair_color;
-    }
-
-    /**
      * @return The professions
      */
     public List<String> getProfessions() {
@@ -202,23 +153,9 @@ public class Brastlewarker implements Parcelable {
     }
 
     /**
-     * @param professions The professions
-     */
-    public void setProfessions(List<String> professions) {
-        this.professions = professions;
-    }
-
-    /**
      * @return The friends
      */
     public List<Object> getFriends() {
         return friends;
-    }
-
-    /**
-     * @param friends The friends
-     */
-    public void setFriends(List<Object> friends) {
-        this.friends = friends;
     }
 }

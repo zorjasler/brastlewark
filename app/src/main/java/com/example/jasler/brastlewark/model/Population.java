@@ -37,14 +37,4 @@ public class Population {
     public List<Brastlewarker> getBrastlewarkers() {
         return Brastlewarker;
     }
-
-    /**
-     *
-     * @param Brastlewarkers
-     * The Brastlewarkers
-     */
-    public void setBrastlewarkers(List<Brastlewarker> Brastlewarkers) {
-        this.Brastlewarker = Brastlewarkers;
-    }
-
 }
