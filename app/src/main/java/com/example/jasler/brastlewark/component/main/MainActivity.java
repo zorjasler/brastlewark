@@ -54,12 +54,6 @@ public class MainActivity extends AppCompatActivity implements MainView {
     }
 
     @Override
-    protected void onDestroy() {
-        mPresenter.onDestroy();
-        super.onDestroy();
-    }
-
-    @Override
     public void showProgress() {
         progressBar.setVisibility(View.VISIBLE);
     }

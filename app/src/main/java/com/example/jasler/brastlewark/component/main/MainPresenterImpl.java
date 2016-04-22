@@ -41,11 +41,6 @@ public class MainPresenterImpl implements MainPresenter {
     }
 
     @Override
-    public void onDestroy() {
-        mView = null;
-    }
-
-    @Override
     public void onItemClick(Brastlewarker brastlewarker) {
         mView.navigateToDetail(brastlewarker);
     }

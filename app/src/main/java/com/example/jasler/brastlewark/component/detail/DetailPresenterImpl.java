@@ -20,11 +20,6 @@ public class DetailPresenterImpl implements DetailPresenter {
         mView.hideProgress();
     }
 
-    @Override
-    public void onDestroy() {
-        mView = null;
-    }
-
     private void setData(Brastlewarker brastlewarker) {
         if (brastlewarker != null) {
             mView.setThumbnail(brastlewarker.getThumbnail());

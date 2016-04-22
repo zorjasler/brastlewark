@@ -49,12 +49,6 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     @Override
-    protected void onDestroy() {
-        mPresenter.onDestroy();
-        super.onDestroy();
-    }
-
-    @Override
     public void showProgress() {
         progressBar.setVisibility(View.VISIBLE);
     }

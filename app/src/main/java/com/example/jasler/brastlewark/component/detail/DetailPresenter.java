@@ -8,6 +8,4 @@ import com.example.jasler.brastlewark.model.Brastlewarker;
 public interface DetailPresenter {
 
     void onCreate(Brastlewarker brastlewarker);
-
-    void onDestroy();
 }

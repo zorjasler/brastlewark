@@ -9,7 +9,5 @@ public interface MainPresenter {
 
     void onCreate();
 
-    void onDestroy();
-
     void onItemClick(Brastlewarker brastlewarker);
 }
