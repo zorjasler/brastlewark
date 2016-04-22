@@ -78,17 +78,17 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     @Override
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         detailAge.setText(String.valueOf(age));
     }
 
     @Override
-    public void setWeight(Double weight) {
+    public void setWeight(double weight) {
         detailWeight.setText(String.valueOf(weight));
     }
 
     @Override
-    public void setHeight(Double height) {
+    public void setHeight(double height) {
         detailHeight.setText(String.valueOf(height));
     }
 

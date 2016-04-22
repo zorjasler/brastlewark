@@ -17,11 +17,11 @@ public interface DetailView {
 
     void setName(String name);
 
-    void setAge(Integer age);
+    void setAge(int age);
 
-    void setWeight(Double weight);
+    void setWeight(double weight);
 
-    void setHeight(Double height);
+    void setHeight(double height);
 
     void setHairColor(String hairColor);
 

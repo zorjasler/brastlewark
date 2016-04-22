@@ -14,12 +14,12 @@ import com.google.gson.annotations.SerializedName;
  */
 public class Brastlewarker implements Parcelable {
 
-    private Integer id;
+    private int id;
     private String name;
     private String thumbnail;
-    private Integer age;
-    private Double weight;
-    private Double height;
+    private int age;
+    private double weight;
+    private double height;
     private String hair_color;
     private List<String> professions = new ArrayList<String>();
     private List<Object> friends = new ArrayList<Object>();
@@ -31,18 +31,18 @@ public class Brastlewarker implements Parcelable {
     }
 
     /**
-     * @param id
-     * @param friends
-     * @param height
-     * @param weight
-     * @param thumbnail
-     * @param age
-     * @param name
-     * @param hair_color
-     * @param professions
+     * @param id The id
+     * @param friends The friends
+     * @param height The height
+     * @param weight The weight
+     * @param thumbnail The thumbnail
+     * @param age The age
+     * @param name The name
+     * @param hair_color The hair color
+     * @param professions The professions
      */
-    public Brastlewarker(Integer id, String name, String thumbnail, Integer age, Double weight,
-                         Double height, String hair_color, List<String> professions, List<Object> friends) {
+    public Brastlewarker(int id, String name, String thumbnail, int age, double weight,
+                         double height, String hair_color, List<String> professions, List<Object> friends) {
         this.id = id;
         this.name = name;
         this.thumbnail = thumbnail;
@@ -99,7 +99,7 @@ public class Brastlewarker implements Parcelable {
     /**
      * @return The id
      */
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
@@ -120,21 +120,21 @@ public class Brastlewarker implements Parcelable {
     /**
      * @return The age
      */
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
     /**
      * @return The weight
      */
-    public Double getWeight() {
+    public double getWeight() {
         return weight;
     }
 
     /**
      * @return The height
      */
-    public Double getHeight() {
+    public double getHeight() {
         return height;
     }
 
