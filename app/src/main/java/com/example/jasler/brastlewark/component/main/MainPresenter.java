@@ -1,6 +1,6 @@
 package com.example.jasler.brastlewark.component.main;
 
-import com.example.jasler.brastlewark.models.Brastlewarker;
+import com.example.jasler.brastlewark.model.Brastlewarker;
 
 /**
  * Created by Jasler on 17/04/2016.

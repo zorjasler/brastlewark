@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.component.main.MainActivity.AdapterEventListener;
-import com.example.jasler.brastlewark.models.Brastlewarker;
-import com.example.jasler.brastlewark.models.Population;
+import com.example.jasler.brastlewark.model.Brastlewarker;
+import com.example.jasler.brastlewark.model.Population;
 import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;

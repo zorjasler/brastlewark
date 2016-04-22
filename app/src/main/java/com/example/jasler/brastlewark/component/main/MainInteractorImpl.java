@@ -2,7 +2,7 @@ package com.example.jasler.brastlewark.component.main;
 
 import com.example.jasler.brastlewark.connection.ConnectionInterface;
 import com.example.jasler.brastlewark.connection.ConnectionService;
-import com.example.jasler.brastlewark.models.Population;
+import com.example.jasler.brastlewark.model.Population;
 
 import retrofit2.Call;
 import retrofit2.Callback;

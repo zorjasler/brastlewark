@@ -1,4 +1,4 @@
-package com.example.jasler.brastlewark.models;
+package com.example.jasler.brastlewark.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

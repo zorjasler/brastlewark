@@ -13,8 +13,8 @@ import android.widget.RelativeLayout;
 import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.component.detail.DetailActivity;
 import com.example.jasler.brastlewark.component.main.adapter.MainAdapter;
-import com.example.jasler.brastlewark.models.Brastlewarker;
-import com.example.jasler.brastlewark.models.Population;
+import com.example.jasler.brastlewark.model.Brastlewarker;
+import com.example.jasler.brastlewark.model.Population;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

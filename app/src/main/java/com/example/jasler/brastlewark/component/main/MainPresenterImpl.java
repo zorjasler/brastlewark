@@ -1,8 +1,8 @@
 package com.example.jasler.brastlewark.component.main;
 
 import com.example.jasler.brastlewark.R;
-import com.example.jasler.brastlewark.models.Brastlewarker;
-import com.example.jasler.brastlewark.models.Population;
+import com.example.jasler.brastlewark.model.Brastlewarker;
+import com.example.jasler.brastlewark.model.Population;
 
 /**
  * Created by Jasler on 17/04/2016.

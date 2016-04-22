@@ -1,4 +1,4 @@
-package com.example.jasler.brastlewark.models;
+package com.example.jasler.brastlewark.model;
 
 import java.util.ArrayList;
 import java.util.List;

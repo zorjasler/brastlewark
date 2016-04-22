@@ -1,6 +1,6 @@
 package com.example.jasler.brastlewark.connection;
 
-import com.example.jasler.brastlewark.models.Population;
+import com.example.jasler.brastlewark.model.Population;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
