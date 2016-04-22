@@ -23,6 +23,8 @@ import butterknife.ButterKnife;
  */
 public class DetailActivity extends AppCompatActivity implements DetailView {
 
+    private static final String INTENT_OBJECT_KEY = "brastlewark";
+
     /* Bindings */
     @Bind(R.id.rl_detail) public RelativeLayout rlDetail;
     @Bind(R.id.char_thumb_big) public ImageView characterThumbnailBig;
@@ -42,7 +44,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         ButterKnife.bind(this);
-        Brastlewarker brastlewarker = getIntent().getParcelableExtra("brastelwark");
+        Brastlewarker brastlewarker = getIntent().getParcelableExtra(INTENT_OBJECT_KEY);
         mPresenter.onCreate(brastlewarker);
     }
 

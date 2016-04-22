@@ -21,6 +21,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements MainView {
 
+    private static final String INTENT_OBJECT_KEY = "brastlewark";
+
     /* Bindings */
     @Bind(R.id.rl_population) public RelativeLayout rlPopulation;
     @Bind(R.id.rv_population) public RecyclerView rvPopulation;
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
     @Override
     public void navigateToDetail(Brastlewarker brastlewarker) {
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("brastelwark", brastlewarker);
+        intent.putExtra(INTENT_OBJECT_KEY, brastlewarker);
         startActivity(intent);
     }
 
