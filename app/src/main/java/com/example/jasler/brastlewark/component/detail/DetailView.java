@@ -19,13 +19,13 @@ public interface DetailView {
 
     void setAge(int age);
 
-    void setWeight(double weight);
+    void setWeight(int weight);
 
-    void setHeight(double height);
+    void setHeight(int height);
 
     void setHairColor(String hairColor);
 
     void setProfessions(List<String> professions);
 
-    void setFriends(List<Object> friends);
+    void setFriends(List<String> friends);
 }

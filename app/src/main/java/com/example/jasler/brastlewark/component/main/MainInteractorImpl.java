@@ -2,7 +2,9 @@ package com.example.jasler.brastlewark.component.main;
 
 import com.example.jasler.brastlewark.connection.ConnectionInterface;
 import com.example.jasler.brastlewark.connection.ConnectionService;
-import com.example.jasler.brastlewark.model.Population;
+import com.example.jasler.brastlewark.model.PopulationModel;
+import com.example.jasler.brastlewark.model.PopulationResponse;
+import com.example.jasler.brastlewark.model.mapper.PopulationModelDataMapper;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -20,21 +22,26 @@ public class MainInteractorImpl implements MainInteractor {
 
         ConnectionInterface mService = ConnectionService.createService(ConnectionInterface.class);
 
-        Call<Population> call = mService.getPopulation();
+        Call<PopulationResponse> call = mService.getPopulation();
 
-        call.enqueue(new Callback<Population>() {
+        call.enqueue(new Callback<PopulationResponse>() {
             @Override
-            public void onResponse(Call<Population> call, Response<Population> response) {
+            public void onResponse(Call<PopulationResponse> call, Response<PopulationResponse> response) {
                 if (response.isSuccessful()) {
-                    Population mData = response.body();
-                    mResultCallback.onSuccess(mData);
+                    PopulationResponse mData = response.body();
+                    if (mData.getBrastlewarkers() == null) {
+                        mResultCallback.onParseError();
+                    } else {
+                        PopulationModel mPopulationData = PopulationModelDataMapper.mapToPopulationModel(mData);
+                        mResultCallback.onSuccess(mPopulationData);
+                    }
                 } else {
                     mResultCallback.onError();
                 }
             }
 
             @Override
-            public void onFailure(Call<Population> call, Throwable t) {
+            public void onFailure(Call<PopulationResponse> call, Throwable t) {
                 mResultCallback.onError();
             }
         });

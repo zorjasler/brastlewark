@@ -10,7 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.jasler.brastlewark.R;
-import com.example.jasler.brastlewark.model.Brastlewarker;
+import com.example.jasler.brastlewark.model.BrastlewarkerModel;
+import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -44,7 +45,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         ButterKnife.bind(this);
-        Brastlewarker brastlewarker = getIntent().getParcelableExtra(INTENT_OBJECT_KEY);
+        BrastlewarkerModel brastlewarker = getIntent().getParcelableExtra(INTENT_OBJECT_KEY);
         mPresenter.onCreate(brastlewarker);
     }
 
@@ -79,12 +80,12 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     @Override
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         detailWeight.setText(String.valueOf(weight));
     }
 
     @Override
-    public void setHeight(double height) {
+    public void setHeight(int height) {
         detailHeight.setText(String.valueOf(height));
     }
 
@@ -99,7 +100,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     }
 
     @Override
-    public void setFriends(List<Object> friends) {
+    public void setFriends(List<String> friends) {
         detailFriends.setText(friends.toString().substring(1, friends.toString().length()-1));
     }
 }

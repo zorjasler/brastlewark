@@ -13,6 +13,7 @@
     <string name="title_professions">Professions: </string>
     <string name="title_friends">Friends: </string>
 
-    <string name="error_fetching_data">An error has occurred</string>
+    <string name="error_parsing_data">Data cannot be parsed; check your model</string>
+    <string name="error_fetching_data">An error has occurred fetching data</string>
     <string name="error_null_object">The passed object is null</string>
 </resources>

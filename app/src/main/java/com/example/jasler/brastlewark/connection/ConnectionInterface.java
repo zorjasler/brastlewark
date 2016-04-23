@@ -1,6 +1,6 @@
 package com.example.jasler.brastlewark.connection;
 
-import com.example.jasler.brastlewark.model.Population;
+import com.example.jasler.brastlewark.model.PopulationResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -12,5 +12,5 @@ import retrofit2.http.GET;
 public interface ConnectionInterface {
 
     @GET("/AXA-GROUP-SOLUTIONS/mobilefactory-test/master/data.json")
-    Call<Population> getPopulation();
+    Call<PopulationResponse> getPopulation();
 }

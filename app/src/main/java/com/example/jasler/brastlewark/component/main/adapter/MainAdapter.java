@@ -10,8 +10,10 @@ import android.widget.TextView;
 
 import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.component.main.MainActivity.AdapterEventListener;
-import com.example.jasler.brastlewark.model.Brastlewarker;
-import com.example.jasler.brastlewark.model.Population;
+import com.example.jasler.brastlewark.model.BrastlewarkerModel;
+import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
+import com.example.jasler.brastlewark.model.PopulationModel;
+import com.example.jasler.brastlewark.model.PopulationResponse;
 import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
@@ -23,10 +25,10 @@ import butterknife.ButterKnife;
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     private Context context;
-    private Population mDataset;
+    private PopulationModel mDataset;
     private AdapterEventListener mAdapterEventListener;
 
-    public MainAdapter(Context context, Population myDataset,
+    public MainAdapter(Context context, PopulationModel myDataset,
                        AdapterEventListener adapterEventListener) {
 
         this.context = context;
@@ -64,7 +66,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             ButterKnife.bind(this, view);
         }
 
-        public void bind(Context context, final Brastlewarker brastlewarker,
+        public void bind(Context context, final BrastlewarkerModel brastlewarker,
                          final AdapterEventListener mAdapterEventListener) {
 
             String thumb = brastlewarker.getThumbnail();

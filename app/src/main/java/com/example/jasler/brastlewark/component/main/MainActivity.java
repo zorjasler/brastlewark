@@ -13,8 +13,10 @@ import android.widget.RelativeLayout;
 import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.component.detail.DetailActivity;
 import com.example.jasler.brastlewark.component.main.adapter.MainAdapter;
-import com.example.jasler.brastlewark.model.Brastlewarker;
-import com.example.jasler.brastlewark.model.Population;
+import com.example.jasler.brastlewark.model.BrastlewarkerModel;
+import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
+import com.example.jasler.brastlewark.model.PopulationModel;
+import com.example.jasler.brastlewark.model.PopulationResponse;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -34,12 +36,12 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     /* ADAPTER LISTENER */
     public interface AdapterEventListener {
-        void onClick(Brastlewarker brastlewarker);
+        void onClick(BrastlewarkerModel brastlewarker);
     }
 
     private AdapterEventListener mAdapterEventListener = new AdapterEventListener() {
         @Override
-        public void onClick(Brastlewarker brastlewarker) {
+        public void onClick(BrastlewarkerModel brastlewarker) {
             mPresenter.onItemClick(brastlewarker);
         }
     };
@@ -69,14 +71,14 @@ public class MainActivity extends AppCompatActivity implements MainView {
     }
 
     @Override
-    public void navigateToDetail(Brastlewarker brastlewarker) {
+    public void navigateToDetail(BrastlewarkerModel brastlewarker) {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra(INTENT_OBJECT_KEY, brastlewarker);
         startActivity(intent);
     }
 
     @Override
-    public void setData(Population population) {
+    public void setData(PopulationModel population) {
         mLayoutManager = new LinearLayoutManager(this);
         rvPopulation.setLayoutManager(mLayoutManager);
         mAdapter = new MainAdapter(this, population, mAdapterEventListener);
