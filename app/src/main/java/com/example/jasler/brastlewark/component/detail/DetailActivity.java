@@ -29,7 +29,7 @@ public class DetailActivity extends AppCompatActivity implements DetailView {
     /* Bindings */
     @Bind(R.id.rl_detail) public RelativeLayout rlDetail;
     @Bind(R.id.char_thumb_big) public ImageView characterThumbnailBig;
-    @Bind(R.id.progressBar2) public ProgressBar progressBar;
+    @Bind(R.id.progressBar) public ProgressBar progressBar;
     @Bind(R.id.detail_name) public TextView detailName;
     @Bind(R.id.detail_age) public TextView detailAge;
     @Bind(R.id.detail_weight) public TextView detailWeight;
