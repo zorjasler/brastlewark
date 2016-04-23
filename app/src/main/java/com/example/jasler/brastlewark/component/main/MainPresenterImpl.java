@@ -17,11 +17,13 @@ public class MainPresenterImpl implements MainPresenter {
         void onParseError();
     }
 
+    private PopulationModel populationModel;
     private MainView mView;
     private MainInteractor mInteractor = new MainInteractorImpl();
     private ResultCallback mResultCallback = new ResultCallback() {
         @Override
         public void onSuccess(PopulationModel population) {
+            populationModel = population;
             mView.setData(population);
             mView.hideProgress();
         }
@@ -50,7 +52,8 @@ public class MainPresenterImpl implements MainPresenter {
     }
 
     @Override
-    public void onItemClick(BrastlewarkerModel brastlewarker) {
+    public void onItemClick(int position) {
+        BrastlewarkerModel brastlewarker = populationModel.getBrastlewarkers().get(position);
         mView.navigateToDetail(brastlewarker);
     }
 }

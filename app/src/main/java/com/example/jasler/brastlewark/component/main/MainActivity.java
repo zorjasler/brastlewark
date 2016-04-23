@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     /* ADAPTER LISTENER */
     public interface AdapterEventListener {
-        void onClick(BrastlewarkerModel brastlewarker);
+        void onListItemClick(int position);
     }
 
     private AdapterEventListener mAdapterEventListener = new AdapterEventListener() {
         @Override
-        public void onClick(BrastlewarkerModel brastlewarker) {
-            mPresenter.onItemClick(brastlewarker);
+        public void onListItemClick(int position) {
+            mPresenter.onItemClick(position);
         }
     };
     /* FIN ADAPTER LISTENER */

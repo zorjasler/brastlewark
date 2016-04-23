@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.jasler.brastlewark.R;
+import com.example.jasler.brastlewark.component.main.MainActivity;
 import com.example.jasler.brastlewark.component.main.MainActivity.AdapterEventListener;
 import com.example.jasler.brastlewark.model.BrastlewarkerModel;
 import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
@@ -24,16 +25,16 @@ import butterknife.ButterKnife;
  */
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
-    private Context context;
-    private PopulationModel mDataset;
-    private AdapterEventListener mAdapterEventListener;
+    private static Context context;
+    private static PopulationModel mDataset;
+    private static AdapterEventListener mAdapterEventListener;
 
-    public MainAdapter(Context context, PopulationModel myDataset,
+    public MainAdapter(Context ctx, PopulationModel myDataset,
                        AdapterEventListener adapterEventListener) {
 
-        this.context = context;
-        this.mDataset = myDataset;
-        this.mAdapterEventListener = adapterEventListener;
+        context = ctx;
+        mDataset = myDataset;
+        mAdapterEventListener = adapterEventListener;
     }
 
     @Override
@@ -47,7 +48,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.bind(context, mDataset.getBrastlewarkers().get(position), mAdapterEventListener);
+        holder.bind(context, position, mAdapterEventListener);
     }
 
     @Override
@@ -66,9 +67,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             ButterKnife.bind(this, view);
         }
 
-        public void bind(Context context, final BrastlewarkerModel brastlewarker,
+        public void bind(Context context, final int position,
                          final AdapterEventListener mAdapterEventListener) {
 
+            BrastlewarkerModel brastlewarker = mDataset.getBrastlewarkers().get(position);
             String thumb = brastlewarker.getThumbnail();
 
             if (thumb != null)
@@ -80,7 +82,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mAdapterEventListener.onClick(brastlewarker);
+                    mAdapterEventListener.onListItemClick(position);
                 }
             });
         }

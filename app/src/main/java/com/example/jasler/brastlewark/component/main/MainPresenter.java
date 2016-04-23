@@ -9,5 +9,5 @@ public interface MainPresenter {
 
     void onCreate();
 
-    void onItemClick(BrastlewarkerModel brastlewarker);
+    void onItemClick(int position);
 }
