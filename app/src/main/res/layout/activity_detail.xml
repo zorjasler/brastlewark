@@ -12,8 +12,8 @@
         android:layout_height="150dp"
         android:id="@+id/char_thumb_big"
         android:adjustViewBounds="true"
-        app:siRadius="100dp"
-        android:layout_marginTop="16dp"
+        app:siRadius="@dimen/thumbnail_radius"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -27,9 +27,9 @@
         <LinearLayout
             style="@style/LayoutDimensions"
             android:orientation="vertical"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
 
             <LinearLayout style="@style/HorizontalLinearLayout">
 
