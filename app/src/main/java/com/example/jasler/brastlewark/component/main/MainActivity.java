@@ -14,9 +14,7 @@ import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.component.detail.DetailActivity;
 import com.example.jasler.brastlewark.component.main.adapter.MainAdapter;
 import com.example.jasler.brastlewark.model.BrastlewarkerModel;
-import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
 import com.example.jasler.brastlewark.model.PopulationModel;
-import com.example.jasler.brastlewark.model.PopulationResponse;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

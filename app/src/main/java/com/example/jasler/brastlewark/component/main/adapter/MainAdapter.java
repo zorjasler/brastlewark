@@ -9,12 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.jasler.brastlewark.R;
-import com.example.jasler.brastlewark.component.main.MainActivity;
 import com.example.jasler.brastlewark.component.main.MainActivity.AdapterEventListener;
 import com.example.jasler.brastlewark.model.BrastlewarkerModel;
-import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
 import com.example.jasler.brastlewark.model.PopulationModel;
-import com.example.jasler.brastlewark.model.PopulationResponse;
 import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;

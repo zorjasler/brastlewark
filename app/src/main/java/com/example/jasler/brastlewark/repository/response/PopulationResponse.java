@@ -1,4 +1,4 @@
-package com.example.jasler.brastlewark.model;
+package com.example.jasler.brastlewark.repository.response;
 
 import java.util.List;
 

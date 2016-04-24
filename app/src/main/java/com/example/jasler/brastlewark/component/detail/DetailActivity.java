@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.model.BrastlewarkerModel;
-import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

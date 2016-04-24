@@ -2,9 +2,7 @@ package com.example.jasler.brastlewark.component.main;
 
 import com.example.jasler.brastlewark.R;
 import com.example.jasler.brastlewark.model.BrastlewarkerModel;
-import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
 import com.example.jasler.brastlewark.model.PopulationModel;
-import com.example.jasler.brastlewark.model.PopulationResponse;
 
 /**
  * Created by Jasler on 17/04/2016.

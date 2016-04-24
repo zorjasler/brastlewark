@@ -1,7 +1,7 @@
-package com.example.jasler.brastlewark.model.mapper;
+package com.example.jasler.brastlewark.repository.mapper;
 
 import com.example.jasler.brastlewark.model.PopulationModel;
-import com.example.jasler.brastlewark.model.PopulationResponse;
+import com.example.jasler.brastlewark.repository.response.PopulationResponse;
 import com.example.jasler.brastlewark.utils.Utils;
 
 /**

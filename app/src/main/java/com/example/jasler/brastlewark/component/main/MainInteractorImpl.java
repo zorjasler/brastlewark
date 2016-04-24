@@ -3,8 +3,8 @@ package com.example.jasler.brastlewark.component.main;
 import com.example.jasler.brastlewark.connection.ConnectionInterface;
 import com.example.jasler.brastlewark.connection.ConnectionService;
 import com.example.jasler.brastlewark.model.PopulationModel;
-import com.example.jasler.brastlewark.model.PopulationResponse;
-import com.example.jasler.brastlewark.model.mapper.PopulationModelDataMapper;
+import com.example.jasler.brastlewark.repository.response.PopulationResponse;
+import com.example.jasler.brastlewark.repository.mapper.PopulationModelDataMapper;
 
 import retrofit2.Call;
 import retrofit2.Callback;

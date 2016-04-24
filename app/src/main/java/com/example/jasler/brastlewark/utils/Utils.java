@@ -1,8 +1,8 @@
 package com.example.jasler.brastlewark.utils;
 
 import com.example.jasler.brastlewark.model.BrastlewarkerModel;
-import com.example.jasler.brastlewark.model.BrastlewarkerResponse;
-import com.example.jasler.brastlewark.model.mapper.BrastlewarkerModelDataMapper;
+import com.example.jasler.brastlewark.repository.response.BrastlewarkerResponse;
+import com.example.jasler.brastlewark.repository.mapper.BrastlewarkerModelDataMapper;
 
 import java.util.ArrayList;
 import java.util.List;
