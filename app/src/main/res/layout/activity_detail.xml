@@ -25,173 +25,102 @@
         android:layout_below="@+id/char_thumb_big">
 
         <LinearLayout
+            style="@style/LayoutDimensions"
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_name"
-                    android:id="@+id/title_name"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_name" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/detail_name"
-                    android:layout_weight="1" />
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_name" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_age"
-                    android:id="@+id/title_age"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_age" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/detail_age"
-                    android:layout_weight="1" />
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_age" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_weight"
-                    android:id="@+id/title_weight"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_weight" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/detail_weight"
-                    android:layout_weight="1" />
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_weight" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_height"
-                    android:id="@+id/title_height"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_height" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/detail_height"
-                    android:layout_weight="1" />
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_height" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_hair_color"
-                    android:id="@+id/title_hair_color"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_hair_color" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
-                    android:id="@+id/detail_hair_color"
-                    android:layout_weight="1" />
+                    style="@style/DetailTextView"
+                    android:id="@+id/detail_hair_color" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_professions"
-                    android:id="@+id/title_professions"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_professions" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
+                    style="@style/DetailTextView"
                     android:id="@+id/detail_professions"
-                    android:ellipsize="end"
-                    android:layout_weight="1" />
+                    android:ellipsize="end" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <LinearLayout style="@style/HorizontalLinearLayout">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    style="@style/TitleTextView"
                     android:text="@string/title_friends"
-                    android:id="@+id/title_friends"
-                    android:layout_weight="1" />
+                    android:id="@+id/title_friends" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Medium Text"
+                    style="@style/DetailTextView"
                     android:id="@+id/detail_friends"
-                    android:ellipsize="end"
-                    android:layout_weight="1" />
+                    android:ellipsize="end" />
 
             </LinearLayout>
 
